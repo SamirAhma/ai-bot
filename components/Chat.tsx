@@ -5,8 +5,6 @@ const COOKIE_NAME = "helloworldrandom";
 import ChatLine from "./ChatLine";
 import Loading from "./Loading";
 import Form from "./Form";
-// import { animateScroll as scroll } from "react-scroll";
-
 import * as Scroll from "react-scroll";
 const Chat = ({ data }: any) => {
   var scroller = Scroll.animateScroll;

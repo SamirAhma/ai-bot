@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-const Chat = ({ who, message }) => {
+const Chat = ({ who, message }: any) => {
   const convertNewLines = (text: string) =>
     text.split("\n").map((line, i) => (
       <span key={i}>
@@ -27,18 +27,3 @@ const Chat = ({ who, message }) => {
 };
 
 export default Chat;
-
-{
-  /* <div
-          className={clsx(
-            " rounded-lg p-4 mb-4",
-            who == "bot" ? "bg-white" : "bg-indigo-100"
-          )}
-        >
-          <div
-            className={clsx(who == "bot" ? "text-gray-700" : "text-indigo-700")}
-          >
-            <p className="leading-5	"> {formattedMessage}</p>
-          </div>
-        </div> */
-}
